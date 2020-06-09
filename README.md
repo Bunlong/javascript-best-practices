@@ -185,3 +185,15 @@ var socials = {
 
 // {tag: '@js', website: 'js.com'}
 ```
+
+#### Combine Objects
+
+```js
+const instagram = {igTag: '@createnextapp'};
+const website = {url: 'https://create-next-app.js.org'};
+
+const socials = {...instagram, ...website};
+
+// {igTag: '@createnextapp', url: 'https://create-next-app.js.org'}
+```
+
