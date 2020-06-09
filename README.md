@@ -40,3 +40,25 @@ Pro:
 let hungry = true;
 let eat = hungry ? 'yes' : 'non';
 ```
+
+#### Dynamic Properties in Objects
+
+Amateur:
+
+```js
+let dynamic = 'value';
+let user = {
+  id: 1
+};
+user[dynamic] = 'other value';
+```
+
+Pro:
+
+```js
+let dynamic = 'value';
+let user = {
+  id: 1,
+  [dynamic] = 'other value'
+};
+```
