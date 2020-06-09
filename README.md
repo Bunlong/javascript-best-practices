@@ -113,3 +113,19 @@ let array = [100, 23, 23, 23, 23, 67, 45];
 let outputArray = Array.from(new Set(array));
 // outputArray = [100, 23, 67, 45]
 ```
+
+#### Populating an Array
+
+Amateur:
+
+```js
+for (let i = 0; i < arraysize; i++) {
+  filledArray[i] = {'hello': 'goodbye'};
+}
+```
+
+Pro:
+
+```js
+let filledArray = new Array(arraySize).fill(null).map(() => ({'hello': 'goodbye'}));
+```
