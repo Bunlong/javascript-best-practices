@@ -1,8 +1,8 @@
 # JavaScript Best Practices
 
-## JavaScript Tricks
+### JavaScript Tricks
 
-### Number to string / String to number
+#### Number to string / String to number
 
 Amateur:
 
@@ -159,3 +159,17 @@ let key = Object.keys(numbers); // key = ['one', 'two']
 let value = Object.values(numbers); // value = [1, 2]
 let entry = Object.entries(numbers); // entry = [['one': 1], ['two': 2]]
 ```
+
+#### Shuffle an Array
+
+```js
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
+let arr = [1, 2, 3, 4, 5];
+shuffle(arr);
+
+// [3, 1, 5, 4, 2]
+```
+
