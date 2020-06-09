@@ -173,3 +173,15 @@ shuffle(arr);
 // [3, 1, 5, 4, 2]
 ```
 
+#### Dynamic Property Names
+
+```js
+const dynamic = 'website';
+
+var socials = {
+  tag: '@js',
+  [dynamic]: 'js.com'
+};
+
+// {tag: '@js', website: 'js.com'}
+```
