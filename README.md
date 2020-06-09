@@ -83,3 +83,33 @@ Pro:
 let arr = ['value1', 'value2', 'value3'];
 let arrObject = {...arr};
 ```
+
+#### Removing Duplicates
+
+Amateur:
+
+```js
+let array = [100, 23, 23, 23, 23, 67, 45];
+let outputArray = [];
+let flag = false;
+for (let j = 0; j < array.legth; j++) {
+  for (let k = 0; k < outputArray.length; k++) {
+    if (array[j] == outputArray[k]) {
+      flag = true;
+    }
+  }
+  if (flag == false) {
+    outputArray.push(array[j]);
+  }
+  flag = false;
+}
+// outputArray = [100, 23, 67, 45]
+```
+
+Pro:
+
+```js
+let array = [100, 23, 23, 23, 23, 67, 45];
+let outputArray = Array.from(new Set(array));
+// outputArray = [100, 23, 67, 45]
+```
