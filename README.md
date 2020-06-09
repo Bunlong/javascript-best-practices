@@ -62,3 +62,24 @@ let user = {
   [dynamic] = 'other value'
 };
 ```
+
+#### Array to Object
+
+Amateur:
+
+```js
+let arr = ['value1', 'value2', 'value3'];
+let arrObject = {};
+for (let i = 0; i < arr.length; ++i) {
+  if (arr[i] !== undefined) {
+    arrObject[i] = arr[i];
+  }
+}
+```
+
+Pro:
+
+```js
+let arr = ['value1', 'value2', 'value3'];
+let arrObject = {...arr};
+```
