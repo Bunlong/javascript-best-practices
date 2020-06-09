@@ -197,3 +197,14 @@ const socials = {...instagram, ...website};
 // {igTag: '@createnextapp', url: 'https://create-next-app.js.org'}
 ```
 
+#### Short-Circuit Condition
+
+```js
+// Before
+if (isFollowing) {
+  sayThankYou();
+}
+
+// After
+isFollowing && sayThankYou();
+```
