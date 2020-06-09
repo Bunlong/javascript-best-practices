@@ -1,8 +1,8 @@
 # JavaScript Best Practices
 
-### JavaScript Tricks
+## JavaScript Tricks
 
-#### Number to string / String to number
+### Number to string / String to number
 
 Amateur:
 
@@ -128,4 +128,34 @@ Pro:
 
 ```js
 let filledArray = new Array(arraySize).fill(null).map(() => ({'hello': 'goodbye'}));
+```
+
+#### Object to Array
+
+Amateur:
+
+```js
+let numbers = {
+  one: 1,
+  two: 2,
+};
+let keys = [];
+for (let number in numbers) {
+  if (numbers.hasOwnProperty(number)) {
+    keys.push(number);
+  }
+}
+// key = ['one', 'two']
+```
+
+Pro:
+
+```js
+let numbers = {
+  one: 1,
+  two: 2,
+}
+let key = Object.keys(numbers); // key = ['one', 'two']
+let value = Object.values(numbers); // value = [1, 2]
+let entry = Object.entries(numbers); // entry = [['one': 1], ['two': 2]]
 ```
