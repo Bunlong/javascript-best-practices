@@ -217,3 +217,19 @@ const newArray = array.flat();
 
 // [1, 2, 2, 3, 4, 8]
 ```
+
+#### Return Shorthand
+
+```js
+// Before
+function myFunc() {
+  foo();
+  bar();
+  return 1;
+}
+
+// After
+function myFunc() {
+  return foo(), bar, 1;
+}
+```
