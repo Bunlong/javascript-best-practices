@@ -278,3 +278,13 @@ const int = 19.8 | 0;
 // 19
 // typeof int: "number"
 ```
+
+#### Convert to Int
+
+```js
+let int = "15";
+int = +int;
+
+// 15
+// typeof int: "number"
+```
