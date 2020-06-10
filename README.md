@@ -208,3 +208,12 @@ if (isFollowing) {
 // After
 isFollowing && sayThankYou();
 ```
+
+#### Flatten an Array
+
+```js
+const array = [1, 2, [2, 3, 4], 8];
+const newArray = array.flat();
+
+// [1, 2, 2, 3, 4, 8]
+```
