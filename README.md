@@ -270,3 +270,11 @@ const val = 5 + '';
 // 5
 // typeof val: "string"
 ```
+
+#### Convert Float to Int
+
+```js
+const int = 19.8 | 0;
+// 19
+// typeof int: "number"
+```
