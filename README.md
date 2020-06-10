@@ -233,3 +233,12 @@ function myFunc() {
   return foo(), bar, 1;
 }
 ```
+
+#### Resize an Array
+
+```js
+var array = [1, 2, 3, 4, 5];
+array.length = 2;
+
+[1, 2]
+```
