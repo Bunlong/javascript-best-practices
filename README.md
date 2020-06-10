@@ -288,3 +288,11 @@ int = +int;
 // 15
 // typeof int: "number"
 ```
+
+#### Remove Last Digits
+
+```js
+const int = 1553 / 10 | 10;
+// 155
+// typeof int: "number"
+```
