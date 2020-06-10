@@ -296,3 +296,12 @@ const int = 1553 / 10 | 10;
 // 155
 // typeof int: "number"
 ```
+
+#### Truncate an Array
+
+```js
+let array = [0, 1, 2, 3, 4, 5];
+array.length = 3;
+
+// [0, 1, 2]
+```
