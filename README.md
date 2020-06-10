@@ -242,3 +242,23 @@ array.length = 2;
 
 [1, 2]
 ```
+
+#### Convert to Boolean
+
+```js
+const isTrue = !0;
+const alsoFalse = !!0;
+
+// true
+// typeof isTrue: "boolean"
+```
+
+#### Filter Unique Values
+
+```js
+const array = [1, 1, 2, 3, 6, 6, 3, 1];
+const uniqueArray = [... new Set(array)];
+
+[1, 2, 3, 6]
+```
+
