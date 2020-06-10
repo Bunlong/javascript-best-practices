@@ -259,6 +259,14 @@ const alsoFalse = !!0;
 const array = [1, 1, 2, 3, 6, 6, 3, 1];
 const uniqueArray = [... new Set(array)];
 
-[1, 2, 3, 6]
+// [1, 2, 3, 6]
 ```
 
+#### Convert to String
+
+```js
+const val = 5 + '';
+
+// 5
+// typeof val: "string"
+```
